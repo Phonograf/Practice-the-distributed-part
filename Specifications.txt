@@ -1,0 +1,10 @@
+postMessage("|prompt|message");
+onmessage = function(e) {
+    console.log(e.data);
+    }
+
+
+    main();
+async function main() {
+    console.log(await prompt("Введите в курс"));
+}
